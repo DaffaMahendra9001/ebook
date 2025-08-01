@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="buat diskusi.css" />
+  <title>Buat Diskusi</title>
+</head>
+<body>
+  <h1>Buat Diskusi Baru</h1>
+  <form action="buat diskusi.php" method="POST">
+    <input type="text" name="judul" placeholder="Judul Diskusi" required>
+    <textarea name="isi" placeholder="Tulis isi diskusi..." required></textarea>
+    <select name="kategori">
+      <option value="sharing">Diskusi Sharing Buku</option>
+      <option value="pelajaran">Diskusi Pelajaran</option>
+    </select>
+    <button type="submit">Kirim</button>
+  </form>
+</body>
+</html>

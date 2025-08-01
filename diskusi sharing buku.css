@@ -1,0 +1,122 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+header {
+  background-color: #ddd;
+  padding: 10px 20px;
+}
+
+.navbar {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.komunitas-container {
+  padding: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.post-box {
+  background: white;
+  border: 1px solid #999;
+  margin: 20px 0;
+  padding: 15px;
+  position: relative;
+  border-radius: 6px;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.post-header span {
+  font-weight: bold;
+}
+
+.post-icons {
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+}
+
+.post-icons i {
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.user-icon {
+  font-size: 20px;
+}
+
+.text-content {
+  font-size: 14px;
+  color: #444;
+}
+
+/* Tombol Buat Diskusi */
+.btn-buat-diskusi {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007BFF;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease;
+}
+
+.btn-buat-diskusi:hover {
+  background-color: #0056b3;
+}
+ .post-icons {
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.post-icons button,
+.post-icons a {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 4px;
+}
+
+.like-btn span {
+  font-weight: bold;
+  margin-left: 4px;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  color: #666;
+  font-size: 0.9rem;
+}

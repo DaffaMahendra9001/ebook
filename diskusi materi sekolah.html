@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diskusi Materi Sekolah</title>
+  <link rel="stylesheet" href="diskusi materi sekolah.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul class="navbar">
+        <li><a href="hompage.html">Home</a></li>
+        <li><a href="komunitas.html">Komunitas</a></li>
+        <li><a href="E-Book.html">E-Book</a></li>
+        <li><a href="diskusi.html">Forum Diskusi</a></li>
+        <li><a href="Tentang Kami.html">Tentang Kami</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="komunitas-container">
+    <h1>Diskusi Materi Sekolah</h1>
+
+    <div class="post-box">
+      <div class="post-header">
+        <span class="user-icon">👤</span>
+        <span>Pintar Beraksi</span>
+      </div>
+      <div class="text-content">
+        Eh ada yang bisa bantu gak di sekolah ku tadi guruku ngasih pertanyaan sejarah diluar buku paket, pertanyaannya kayak gini, apakah benar Hitler meninggal di Madiun?
+      </div>
+      <div class="post-icons">
+  <button onclick="likePost(this)" class="like-btn">👍 <span class="like-count">0</span></button>
+  <a href="komentar.html" class="comment-btn">💬</a>
+  <button onclick="savePost(this)" class="save-btn">🔖</button>
+</div>
+
+    </div>
+
+    <!-- Tambahkan post-box lain di sini kalau perlu -->
+
+  </main>
+
+  <a class="btn-buat-diskusi" href="#">+ Buat Diskusi</a>
+
+  <script>
+  function likePost(btn) {
+    let countSpan = btn.querySelector('.like-count');
+    let count = parseInt(countSpan.textContent);
+    count++;
+    countSpan.textContent = count;
+  }
+
+  function savePost(btn) {
+    alert("Postingan berhasil disimpan ke koleksi kamu (simulasi).");
+    // Kalau mau pakai localStorage:
+    // localStorage.setItem("post_saved", "true");
+  }
+</script>
+
+<footer class="footer">
+    <p>&copy; Mahendra Library. Belajar jadi lebih mudah dan menyenangkan.</p>
+  </footer>
+
+
+</body>
+</html>
